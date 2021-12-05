@@ -1,11 +1,10 @@
 <?php
 function SeculoAno($ano){
     $seculo = $ano / 100;
-    echo '<br>'.$ano . " Seculo: ". ceil($seculo);
-    return ceil($seculo);
+    return ceil($seculo); // aredonda pra cima ex: ano foi 1901 / 100 = 19.01, ceil(19.01) = 20
 }
 
-SeculoAno(1700);
-SeculoAno(1801);
+echo SeculoAno(1700);
+echo SeculoAno(1801);
 
 ?>
